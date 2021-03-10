@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Vefforritun 2, 2021, verkefni 5
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Kynning á verkefni](https://youtu.be/).
 
-## Available Scripts
+## Routing
 
-In the project directory, you can run:
+Setja skal upp og nota react router.
 
-### `yarn start`
+Yfirlit er á `/` og birtir alla flokka frá vefþjónustu.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Á `/:id` eru birtar fréttir fyrir þann flokk. Ef flokkur er ekki til er `404` síða sýnd (einfaldlega síða sem segir að síðan sé ekki til.) Setja skal `Til baka` link sem viðheldur stöðu, þ.e.a.s. notar `<Link>` úr react router.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Ef reynt er að skoða aðrar slóðir er `404` síða sýnd.
 
-### `yarn test`
+## Gögn
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[RÚV RSS API proxy](https://github.com/vefforritun/vef2-2021-ruv-rss-json-proxy) veitir aðgang að nýjustu fréttum frá RÚV. Tólið er sett upp á `https://vef2-2021-ruv-rss-json-proxy.herokuapp.com/`.
 
-### `yarn build`
+Af handahófi er það lengi að skila niðurstöðum og/eða skilar villum. Gera skal ráð fyrir því með því að útfæra loading og error state fyrir componenta.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Nota skal `REACT_APP_API_URL` til að sækja slóð á vefþjónustu, sjá `.env.example`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Síður
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Yfirlitssíða birtir flokka ásamt fimm nýjustu fréttum og link á fréttasíðu.
 
-### `yarn eject`
+Fréttasíða birtir allar fréttir í flokk.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Útlit
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[Sjá útlit](./utlit).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Setja skal upp Sass og útfæra útlit per component í Sass skrá fyrir hann.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Ekki þarf að birta nákvæmlega eins útlit, en það skal í grunninn vera eins:
 
-## Learn More
+* Yfirlitssíða með fimm kassa með titli og fimm fréttum hver, linkur til að sjá allar
+* Fréttasíða með titli, öllum fréttum og link til baka
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Tæki og tól
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Gefinn er grunnur, með uppbyggingu á verkefni, byggt á `create-react-app`. Ekki ætti að þurfa að búa til fleiri componenta en það er leyfilegt. Ekki þarf að útbúa _container_ component, en það er leyfilegt.
 
-### Code Splitting
+## Mat
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* 30% – Gögn sótt á vefþjónustu
+* 20% – React router sett upp og routing skv. lýsingu
+* 20% – Yfirlits- og fréttasíða uppsett
+* 20% – Útlit og viðmót
+* 10% – Verkefni sett upp á Heroku, engar linting villur og almennt snyrtilegur kóði
 
-### Analyzing the Bundle Size
+## Sett fyrir
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Verkefni sett fyrir í fyrirlestri fimmtudaginn 11. mars 2021.
 
-### Making a Progressive Web App
+## Skil
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Skila skal í Canvas í seinasta lagi fyrir lok dags laugardaginn 27. mars 2021.
 
-### Advanced Configuration
+Skilaboð skulu innihalda slóð á Heroku og slóð á GitHub repo fyrir verkefni, og dæmatímakennurum skal hafa verið boðið í repo ([sjá leiðbeiningar](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository)). Notendanöfn þeirra eru:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* `jonnigs`
+* `mimiqkz`
+* `Steinalicious`
+* `zurgur`
 
-### Deployment
+Hver dagur eftir skil dregur verkefni niður um 10%, allt að 20% ef skilað mánudaginn 29. mars 2021 en þá lokar fyrir skil.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Einkunn
 
-### `yarn build` fails to minify
+Sett verða fyrir 6 minni verkefni þar sem 5 bestu gilda 8% hvert, samtals 40% af lokaeinkunn.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Sett verða fyrir tvö hópverkefni þar sem hvort um sig gildir 10%, samtals 20% af lokaeinkunn.
+
+---
+
+> Útgáfa 0.1
+
+|--------|----------|
+| Útgáfa | Breyting |
+|--------|----------|
+| 0.1    | Fyrsta útgáfa |
+|--------|----------|
