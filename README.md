@@ -1,6 +1,6 @@
 # Vefforritun 2, 2021, verkefni 5
 
-[Kynning á verkefni](https://youtu.be/).
+[Kynning á verkefni](https://youtu.be/EyRD1dVVDiU).
 
 ## Routing
 
