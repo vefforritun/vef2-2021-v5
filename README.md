@@ -76,8 +76,7 @@ Sett verða fyrir tvö hópverkefni þar sem hvort um sig gildir 10%, samtals 20
 
 > Útgáfa 0.1
 
-|--------|----------|
+
 | Útgáfa | Breyting |
 |--------|----------|
 | 0.1    | Fyrsta útgáfa |
-|--------|----------|
